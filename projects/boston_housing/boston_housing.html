@@ -11983,7 +11983,7 @@ Standard deviation of prices: $165171.13154429474
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Answer:</strong></p>
 <p>1) I would expect a home with a bigger number of rooms (RM) to have a higher price</p>
-<p>2) I would expect a home with a lower percentage of lower clas workers (LSTAT) to have a higher price</p>
+<p>2) I would expect a home with a lower percentage of lower class workers (LSTAT) to have a higher price</p>
 <p>3) I would expect a home with a lower ratio of students to teachers to be worth more than a higher PTRATIO, although this could be debatable</p>
 
 </div>
@@ -12214,10 +12214,10 @@ Standard deviation of prices: $165171.13154429474
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Answer: </strong></p>
+<p><strong>Answer:</strong></p>
 <p>The benefit of splitting the dataset into subsets of training and testing data is to first of all not to have to break the golden rule: "NEVER USE THE OVERALL TESTING DATA FOR TRAINGING"</p>
 <p>Secondly, this will help us in choosing the best data model that has the best r2 score based on the different training models.
-The scores that we will get from the previoulsy created method, will help up in making this decision.</p>
+The scores that we will get from the previously created method, will help up in making this decision.</p>
 
 </div>
 </div>
@@ -12297,11 +12297,11 @@ Think about the pros and cons of adding more training points based on if the tra
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Answer: </strong></p>
+<p><strong>Answer:</strong></p>
 <p>I chose the 4th graph with the max_depth of "10"</p>
 <p>It is obvious that this model is overfitting.</p>
-<p>If we add more training points, the score would converge more to "1", and the testing curve may coverge towards a lower score value, noting that both curves will never meet.</p>
-<p>Adding more training points would therefor not benefit the model</p>
+<p>If we add more training points, the score would converge more to "1", and the testing curve may converge towards a lower score value, noting that both curves will never meet.</p>
+<p>Adding more training points would therefore not benefit the model</p>
 
 </div>
 </div>
@@ -12368,9 +12368,9 @@ Think about the pros and cons of adding more training points based on if the tra
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Answer: </strong></p>
+<p><strong>Answer:</strong></p>
 <p>When a model is trained with a maximum depth of "1", it would most probably suffer from a high bias, meaning that it will be a sign of underfitting and the model needs more depth to have a better overall score.</p>
-<p>When a model is trained with a maximum depth of "10" will usually predict that the model wil suffer from a high variance, which is a sign of overfitting. This means that the model is too complex for the data.</p>
+<p>When a model is trained with a maximum depth of "10" will usually predict that the model will suffer from a high variance, which is a sign of overfitting. This means that the model is too complex for the data.</p>
 
 </div>
 </div>
@@ -12392,7 +12392,7 @@ Think about the pros and cons of adding more training points based on if the tra
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Answer: </strong></p>
+<p><strong>Answer:</strong></p>
 <p>My best guess would be a max depth value of "3" or "4".</p>
 <p>This guess is based noticing on the above graph that both curves start converging till around max_depth 3 or 4, then they start diverging when introducing a higher max_depth value</p>
 
@@ -12426,7 +12426,7 @@ Think about the pros and cons of adding more training points based on if the tra
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Answer: </strong></p>
+<p><strong>Answer:</strong></p>
 <p>I will be using the cross validation grid search technique, since I already have a method that calculates the r2 score.</p>
 <p>This will basically set aside some cross validation data and provide some validation of the created model based on both the score and parameters used within the model itself, such as max depth in a Decision tree model or a degree in a logistic regression model</p>
 
@@ -12453,13 +12453,13 @@ Think about the pros and cons of adding more training points based on if the tra
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Answer: </strong></p>
+<p><strong>Answer:</strong></p>
 <p>The k-fold cross validation technique is a way to properly test the fitness of a given model based on its parameters without having to use the originally set aside testing set.</p>
-<p>this basically divides the testing sets into two sets (traing &amp; cross validation) k times.</p>
-<p>the k therefore in this context stands for the number of times this data will be randomly devided.</p>
-<p>K=1 for example will divide the data only once similair to the regular cross validation technique.</p>
+<p>this basically divides the testing sets into two sets (training &amp; cross validation) k times.</p>
+<p>the k therefore in this context stands for the number of times this data will be randomly divided.</p>
+<p>K=1 for example will divide the data only once similar to the regular cross validation technique.</p>
 <p>K=4 will divide the data into testing and training 4 times randomly.</p>
-<p>This will help us measure the fitness of a prediction mroe accurately.</p>
+<p>This will help us measure the fitness of a prediction more accurately.</p>
 
 </div>
 </div>
@@ -12600,7 +12600,7 @@ For the <code>fit_model</code> function in the code cell below, you will need to
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong> Hint: </strong> The answer comes from the output of the code snipped above.</p>
 <p><strong>Answer:</strong></p>
-<p>Based on the output tha max_depth should be 4 to have an optional model.</p>
+<p>Based on the output the max_depth should be 4 to have an optional model.</p>
 <p>Previously, I have predicted that the max depth should be around 3 or 4 based on the presented curves.
 The k fold cross validation technique just confirmed that 4 would have been the best answer.</p>
 
@@ -12695,8 +12695,8 @@ Predicted selling price for Client 3&#39;s home: $921,900.00
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Answer: </strong></p>
-<p>Previously we have calculated the follwing:</p>
+<p><strong>Answer:</strong></p>
+<p>Previously we have calculated the following:</p>
 <p>Statistics for Boston housing dataset:</p>
 <p>Minimum price: $105000.0</p>
 <p>Maximum price: $1024800.0</p>
@@ -12704,12 +12704,12 @@ Predicted selling price for Client 3&#39;s home: $921,900.00
 <p>Median price $438900.0</p>
 <p>Standard deviation of prices: $165171.13154429474</p>
 <p>Based on this data:</p>
-<p>1) Client 1 has a relatively big house in a good neighbourhood with an average Students to Teacher Ratio.
+<p>1) Client 1 has a relatively big house in a good neighborhood with an average Students to Teacher Ratio.
 Hence one would predict that the house should around the median price. <em>$411,096.00</em> is therefore a reasonable offer</p>
-<p>2) Cient 2 has a smaller house in a relatively lower class neighbourhood with a high student to teacher ratio.
-Hence one would predict that the house should be closer to the minimum proce. <em>$219,961.54</em> should also be considered a reasonable price.</p>
-<p>3) Client 3 has a big house in a high class neighbourhood with a low Student to Teacher ratio.
-This house should therefore be closer to the more expensive houses. <em>$921,900.00</em> is therefore a resonable price</p>
+<p>2) Client 2 has a smaller house in a relatively lower class neighborhood with a high student to teacher ratio.
+Hence one would predict that the house should be closer to the minimum price. <em>$219,961.54</em> should also be considered a reasonable price.</p>
+<p>3) Client 3 has a big house in a high class neighborhood with a low Student to Teacher ratio.
+This house should therefore be closer to the more expensive houses. <em>$921,900.00</em> is therefore a reasonable price</p>
 
 </div>
 </div>
@@ -12789,16 +12789,16 @@ Range in prices: $73,357.39
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Answer: </strong></p>
-<p>I belive that the constructed model could be used as an indicator but not in a real world setting, i.e. the output should not be treated at optimal for the following reason.</p>
+<p><strong>Answer:</strong></p>
+<p>I believe that the constructed model could be used as an indicator but not in a real world setting, i.e. the output should not be treated at optimal for the following reason.</p>
 <ul>
-<li><p>from the sensetivity code snippit we found a range of around 75k$ which from my point of view is too high sice this roughly around 15-20% of the proice</p>
+<li><p>from the sensitivity code snippit we found a range of around 75k$ which from my point of view is too high since this roughly around 15-20% of the price</p>
 </li>
-<li><p>I think more features should be introduced to get a better model, such as maintenance cost, traffic/transit score, quality of appliances, close amenities (groceries, schools...etc), the potetnial of the house location in the future, the year in which it has been built....etc</p>
+<li><p>I think more features should be introduced to get a better model, such as maintenance cost, traffic/transit score, quality of appliances, close amenities (groceries, schools...etc), the potential of the house location in the future, the year in which it has been built....etc</p>
 </li>
-<li><p>I don't think the model in this setting is robust enough to make predicitions mainly based on large range as previously discussed, it could proved a good starting point though</p>
+<li><p>I don't think the model in this setting is robust enough to make predications mainly based on large range as previously discussed, it could proved a good starting point though</p>
 </li>
-<li><p>Data collected from an urban city will not be aplicable for a rural city, since the data will be significantly different when it comes to distances, ratios, area and of course price</p>
+<li><p>Data collected from an urban city will not be applicable for a rural city, since the data will be significantly different when it comes to distances, ratios, area and of course price</p>
 </li>
 <li><p>I guess it could be generally fair, if we are able to factor in some of the other factors such as size, renovations, quality..etc. Again, it would still be a very good tool as indicator or a reference for a price.</p>
 </li>
