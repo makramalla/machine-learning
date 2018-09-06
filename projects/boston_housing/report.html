@@ -11983,8 +11983,8 @@ Standard deviation of prices: $165171.13154429474
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Answer:</strong></p>
 <p>1) I would expect a home with a bigger number of rooms (RM) to have a higher price. To elaborate, I believe that a larger house with more amenities and potentially more space would cost more that a smaller house.</p>
-<p>2) I would expect a home with a lower percentage of lower class workers (LSTAT) to have a higher price. From experience, people in similar social class tend to live in the vacinity of each other, additionally these neighborhoods' services and amenities will reflect on the class of its residents (it might be a bit unethical, but it is a fact of life). For example,higher calss neighborhoods will tend to have reliable goverment provided services, better gorcers,better schools, better transit scores, restaurants,.. etc. This will accordingly reflect on the price of the house in these specific areas.</p>
-<p>3) I would expect a home with a lower ratio of students to teachers to be worth more than a higher PTRATIO, it is a well known fact overcrowded schools tend to have a lower overal ranking than the other. The lower the students to teacher ratio, the better teaching quality a students will receive, since the teacher will have the ability to give more time and focus to each individual student. One could also factor in the fact than schools with a low PTRATIO are usually private schools with above average tuition fees, which accordinly will reflect on the caliber of population living in this area, and accordingly the market prices of the houses in this neighborhood.</p>
+<p>2) I would expect a home with a lower percentage of lower class workers (LSTAT) to have a higher price. From experience, people in similar social class tend to live in the vicinity of each other, additionally these neighborhoods' services and amenities will reflect on the class of its residents (it might be a bit unethical, but it is a fact of life). For example, higher class neighborhoods will tend to have reliable government provided services, better grocers, better schools, better transit scores, restaurants,.. etc. This will accordingly reflect on the price of the house in these specific areas.</p>
+<p>3) I would expect a home with a lower ratio of students to teachers to be worth more than a higher PTRATIO, it is a well known fact overcrowded schools tend to have a lower overall ranking than the other. The lower the students to teacher ratio, the better teaching quality a students will receive, since the teacher will have the ability to give more time and focus to each individual student. One could also factor in the fact than schools with a low PTRATIO are usually private schools with above average tuition fees, which accordingly will reflect on the caliber of population living in this area, and accordingly the market prices of the houses in this neighborhood.</p>
 <p>As a conclusion, that these are just pure expectation or so-called educated guesses, and could be debatable in different contexts.</p>
 
 </div>
@@ -12217,13 +12217,11 @@ Standard deviation of prices: $165171.13154429474
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Answer:</strong></p>
 <p>The benefit of splitting the dataset into subsets of training and testing data is to first of all not to have to break the golden rule: "NEVER USE THE OVERALL TESTING DATA FOR TRAINGING"</p>
-<p>Secondly, this will help us in choosing the best data model that has the best r2 score based on the different training models.
-The scores that we will get from the previously created method, will help up in making this decision.</p>
-<p>Moreover, establishing a proper pattern isn't an easy task. If the pattern is too simple, it may not provide us with a proper model to predict future outcomes, wihich is a classic case of underfitting. Establishing a a complex pattern that achieves a minmal error for the available data might proivde a good result in the beggining, but it will be expected to fail once we add more data during the prediction phase. This approach id reffered to as overfitting.</p>
+<p>Secondly, this will help us in choosing the best data model that has the best r2 score based on the different training models. The scores that we will get from the previously created method, will help up in making this decision.</p>
+<p>Moreover, establishing a proper pattern isn't an easy task. If the pattern is too simple, it may not provide us with a proper model to predict future outcomes, which is a classic case of underfitting. Establishing a complex pattern that achieves a minimal error for the available data might provide a good result in the beginning, but it will be expected to fail once we add more data during the prediction phase. This approach id referred to as overfitting.</p>
 <p>Thus, splitting the data randomly into training and testing data will provide us with an effective way to have some sort of feedback for the developed model that fits our data properly, and can assure that we will be able to make better prediction.</p>
-<p>When splitting the data, one should choose a ratio (training/testing) that would facilitate this process.
-Having to much training data might provide us with an overfitted model, and on the other hand having a low amount of traiing data (and thus a higher percentage of testing data) might create a simple model that could not be that effective in the prediction phase, thus underfitting.</p>
-<p>The ratio that we are currentnly using is 80/20, which i belive is a proper ratio.</p>
+<p>When splitting the data, one should choose a ratio (training/testing) that would facilitate this process. Having to much training data might provide us with an overfitted model, and on the other hand having a low amount of training data (and thus a higher percentage of testing data) might create a simple model that could not be that effective in the prediction phase, thus underfitting.
+The ratio that we are currently using is 80/20, which I believe is a proper ratio.</p>
 
 </div>
 </div>
@@ -12435,9 +12433,9 @@ Think about the pros and cons of adding more training points based on if the tra
 <p><strong>Answer:</strong></p>
 <p>I will be using the cross validation grid search technique, since I already have a method that calculates the r2 score.</p>
 <p>This will basically set aside some cross validation data and provide some validation of the created model based on both the score and parameters used within the model itself, such as max depth in a Decision tree model or a degree in a logistic regression model</p>
-<p>Grid Search as a whole is a technique that will allow you to compare the different fitness scores of utilizing different parameters of search techniques. Other than the Decision tree example one could use the grid search in the logistical regression model based on the model's degree for example. In other cases such as in the support vector machine, one could also perform a grid search on two different paramets such as the kernel and the C factor.</p>
+<p>Grid Search as a whole is a technique that will allow you to compare the different fitness scores of utilizing different parameters of search techniques. Other than the Decision tree example one could use the grid search in the logistical regression model based on the model's degree for example. In other cases such as in the support vector machine, one could also perform a grid search on two different parameters such as the kernel and the C factor.</p>
 <p>The way it works, is that is calculates the score for each different parameter or combination of parameters. It presents the outcome of each calculation in a metric form, so that in the later stage, it will go through the created metric and chooses the one with the best score along with its parameters.</p>
-<p>One of the drawbacks of such a technique however is that in some cases it might use an exsessive amount of computing power, especially when providing a wider range of parameters as input. It is this suggested to try to provide a realistic range.</p>
+<p>One of the drawbacks of such a technique however is that in some cases it might use an excessive amount of computing power, especially when providing a wider range of parameters as input. It is this suggested to try to provide a realistic range.</p>
 
 </div>
 </div>
@@ -12465,8 +12463,8 @@ Think about the pros and cons of adding more training points based on if the tra
 <p><strong>Answer:</strong></p>
 <p>The k-fold cross validation technique is a way to properly test the fitness of a given model based on its parameters without having to use the originally set aside testing set.</p>
 <p>There is a difference between testing and validation in that sense. As described earlier, the testing set is usually used in the later stages to test the fitness of the overall prediction model. The validation process however is more interested in the creation of this model, providing the training process with a proper mechanism to "evaluate" during the development step, by providing an average score of each fold to provide feedback on the model's effectiveness.</p>
-<p>The k-fold cross validation basically divides the testing sets into random k sets. k-1 folds will be used for training puposes as usual, the last fold will be used for validation.This process will be repeated k times, each time a different fold will be represented and the validation set.</p>
-<p>The combination of noth k-cross validation and grid search will help in providing an overall average score that wil be used to determine the optimum model based on the provided parameters.</p>
+<p>The k-fold cross validation basically divides the testing sets into random k sets. k-1 folds will be used for training purposes as usual, the last fold will be used for validation. This process will be repeated k times, each time a different fold will be represented and the validation set.</p>
+<p>The combination of both k-cross validation and grid search will help in providing an overall average score that will be used to determine the optimum model based on the provided parameters.</p>
 
 </div>
 </div>
